@@ -4,12 +4,8 @@ const chess = N => {
 
     let res = '';
     for (let j = 0; j < N; ++j) {
-        for (let i = 0; i < N; ++i){
-            if ((j + i) % 2 === 0)
-                res += '*';
-            else
-                res += ' ';
-        }
+        for (let i = 0; i < N; ++i)
+            res += (j + i) % 2 === 0 ? '*' : ' ';
         
         res += '\n';
     }
