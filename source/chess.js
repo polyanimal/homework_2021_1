@@ -1,7 +1,7 @@
 /**
  * Создание ASCII шахматной доски
- * @param {number} size Размер шахматной доски
- * @returns {string} Текстовое представление доски из звёздочек и пробельчиков
+ * @param {number} size - Размер шахматной доски
+ * @returns {?string} Текстовое представление доски или null, если доски с данным размером быть не может
  */
 const chess = (size) => {
     if (size <= 1 || !Number.isInteger(Number(size)))
